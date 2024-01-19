@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/app/pages/details_page.dart';
 
 class MyCard extends StatelessWidget {
   final String child;
 
   const MyCard({super.key, required this.child});
+
+  void navigateToDetails(BuildContext context) {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => const Details(),
+    ));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +37,9 @@ class MyCard extends StatelessWidget {
                 ),
                 Expanded(
                     child: TextButton(
-                  onPressed: () {/**Aqui estará a logica para navegar para pagina de detalhas do post. */},
+                  onPressed: () {
+                    navigateToDetails(context);
+                  },
                   child: const Text('Ver mais'),
                 )),
               ],
