@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/app/pages/details_page.dart';
 
 class MyCard extends StatelessWidget {
-  final String child;
+  final Map<String, dynamic> child;
 
   const MyCard({super.key, required this.child});
 
@@ -25,8 +25,8 @@ class MyCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
+              child['title'].toString(),
               textAlign: TextAlign.left,
-              child,
               style: const TextStyle(fontSize: 20),
             ),
             Row(
