@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/app/components/card.dart';
-import 'package:flutter_application/app/store/post_store.dart';
+import 'package:flutter_application/app/stores/post_store.dart';
 import 'package:flutter_application/app/utils/dio_cliente.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
