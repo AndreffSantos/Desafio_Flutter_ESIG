@@ -8,12 +8,14 @@ class PostStore = _PostStore with _$PostStore;
 abstract class _PostStore with Store {
   final DioClient client;
 
-  _PostStore({required this.client});
+  _PostStore({required this.client}) {
+    setPosts();
+  }
 
   @observable
   List<dynamic> posts = [];
 
-  Future getPosts() async {
+  void setPosts() async {
     posts = await client.get(url: 'https://jsonplaceholder.typicode.com/posts');
   }
 }
