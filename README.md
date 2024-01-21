@@ -1,16 +1,41 @@
-# flutter_application
+# Desafio Técnico Flutter - Simulação de Feed de Rede Social
 
-A new Flutter project.
+## Visão Geral
 
-## Getting Started
+Este é um projeto desenvolvido como parte de um desafio técnico utilizando o framework Flutter. A aplicação consiste em uma simulação de feed de uma rede social, onde os usuários podem visualizar uma listagem de postagens, clicar e uma das postagens par se direcionar para uma pagina de detalhes da postagem.
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- **Feed de Postagens:** Os usuários podem visualizar uma lista de postagens, cada uma exibindo o titulo e conteúdo do post.
 
-A few resources to get you started if this is your first Flutter project:
+- **Página de Detalhes:** Os usuarios podem visualizar email do autor do posts bem como os comentários.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Pré-requisitos
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Flutter SDK](https://flutter.dev/)
+- [Dio](https://pub.dev/packages/dio)
+- [MobX](https://mobx.netlify.app/)
+
+## Como Executar
+
+1. Clone este repositório: `git clone https://github.com/seu-usuario/nome-do-repositorio.git`
+2. Navegue até o diretório do projeto: `cd nome-do-repositorio`
+3. Execute o aplicativo: `flutter run`
+
+## Estrutura do Projeto
+
+- `lib/`: Contém o código-fonte da aplicação.
+  - `main.dart`: Arquivo principal que inicia o aplicativo.
+  - `app/`: Contém os codígos da aplicação.
+    - `components`: Componentes usado nas paginas da aplicação. 
+    - `pages/`: Telas da aplicação.
+    - `stores/`: Arquivos de gerenciamento de estado.
+
+## Contribuição
+
+Se deseja contribuir para o desenvolvimento deste projeto, siga os passos abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua nova funcionalidade: `git checkout -b nova-funcionalidade`
+3. Faça commit das suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
+4. Faça push para a branch: `git push origin nova-funcionalidade`
+5. Abra um pull request.
