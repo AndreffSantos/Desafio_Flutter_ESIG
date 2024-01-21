@@ -8,7 +8,7 @@ class MyCard extends StatelessWidget {
 
   void navigateToDetails(BuildContext context) {
     Navigator.of(context).push(MaterialPageRoute(
-      builder: (context) => const Details(),
+      builder: (context) => Details(child: child,),
     ));
   }
 
